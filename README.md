@@ -55,4 +55,22 @@ This project implements a Retrieval-Augmented Generation (RAG) system to answer 
     * **Unchecked:** The system will provide answers based on the retrieved information and the LLM's general knowledge without explicitly prioritizing the documents or providing the "general knowledge" disclaimer.
 3.  **View the answer:** The generated answer will be displayed below the input box.
 
+
+rag-syllabus-project/
+├── rag_app.py           # The main Python application code
+├── documents/          # Folder to store your syllabus, notes, books, etc.
+│   ├── syllabus.pdf
+│   ├── notes.txt
+│   ├── book.docx
+│   └── presentation.pptx
+└── README.md           # This README file
+
+## Further Enhancements
+
+* **More sophisticated verification:** Implement semantic similarity checks or keyword analysis for better answer verification.
+* **Source citation:** Add functionality to cite the specific documents or sections used to generate the answer.
+* **Multi-turn conversations:** Allow for follow-up questions and maintain conversation history.
+* **More advanced chunking strategies:** Experiment with different chunking methods for better retrieval.
+* **Integration with other local LLMs:** Allow the user to choose from different models available in Ollama.
+* **User interface improvements:** Enhance the Streamlit UI for better user experience.
 ## Project Structure
